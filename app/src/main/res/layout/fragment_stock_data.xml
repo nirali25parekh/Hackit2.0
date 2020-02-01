@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StockDataFrag">
@@ -13,15 +17,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
-
-
 
 
             <EditText
                 android:id="@+id/stockname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:hint="Enter stock name" />
 
@@ -29,6 +33,7 @@
                 android:id="@+id/go"
                 android:layout_width="12dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="@android:string/search_go" />
         </LinearLayout>
@@ -36,12 +41,64 @@
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/stockchart"
             android:layout_width="match_parent"
-            android:layout_height="300dp" />
+            android:layout_height="300dp"
+            android:layout_margin="10dp" />
 
         <TextView
-            android:id="@+id/stockdata"
+            android:id="@+id/Price"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="bhavi" />
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+            android:text="Current Price:  "
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Latest High:  "
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Latest Low:  "
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tradeday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Last Trading Day:  "
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Change Percent:  "
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Previous Close:  "
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
     </LinearLayout>
 </FrameLayout>
+</ScrollView>
