@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+<!--    <color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#e2f1f8</color>  //whole background
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorAccent">#97b498</color> //selected tab
 
     <color name="color1">#F1755B</color>
     <color name="color2">#5CB187</color>
@@ -10,4 +13,9 @@
     <color name="color4">#EEBE5C</color>
     <color name="color5">#8778E9</color>
 
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#983CFF</color>
+    <color name="colorPurpleT">#64983cff</color>
+    <color name="colorBlue">#2FB4FF</color>
+    <color name="colorBlueT">#642fb4ff</color>
 </resources>
