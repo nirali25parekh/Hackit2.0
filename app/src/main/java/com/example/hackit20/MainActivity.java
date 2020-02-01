@@ -80,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
 
                     default:
                         setCustomView(0, 1, 2, 3);
-                        setTextAndImageWithAnimation("HOME", R.drawable.ic_home);
+                        setTextAndImageWithAnimation("Quiz and Tutorials", R.drawable.ic_home);
 
-                        handleFragment(new HomeFragment());
+                        handleFragment(new QuizFragment());
                         break;
                 }
             }

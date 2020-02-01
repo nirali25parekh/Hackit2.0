@@ -12,6 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import static android.graphics.Color.green;
+import static android.graphics.Color.red;
+import static android.graphics.Color.blue;
+
 public class QuizFragment extends Fragment {
 
     private QuestionLibrary mQuestionLibrary = new QuestionLibrary();
@@ -46,9 +50,10 @@ public class QuizFragment extends Fragment {
                     mScore=mScore+1;
                     updateScore(mScore);
                     updateQuestion();
+                    //mChoice1.setBackgroundColor(green(255));
                     //Toast.makeText(this,"Correct!!!",Toast.LENGTH_SHORT).show();
                 }else {
-
+                   // mChoice1.setBackgroundColor(red(255));
                     updateQuestion();
                 }
             }
@@ -58,13 +63,13 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if(mChoice2.getText()==mAnswer){
-
+                   // mChoice2.setBackgroundColor(green(255));
                     mScore=mScore+1;
                     updateScore(mScore);
                     updateQuestion();
                     //Toast.makeText(this,"Correct!!!",Toast.LENGTH_SHORT).show();
                 }else {
-
+                   // mChoice2.setBackgroundColor(red(255));
                     updateQuestion();
                 }
             }
@@ -74,15 +79,22 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if(mChoice3.getText()==mAnswer){
-
+                   // mChoice3.setBackgroundColor(green(255));
                     mScore=mScore+1;
                     updateScore(mScore);
                     updateQuestion();
                     //Toast.makeText(this,"Correct!!!",Toast.LENGTH_SHORT).show();
                 }else {
-
+                 //   mChoice3.setBackgroundColor(red(255));
                     updateQuestion();
                 }
+            }
+        });
+
+        mQuit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
 
@@ -100,6 +112,10 @@ public class QuizFragment extends Fragment {
             mChoice3.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
             mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
             mQuestionNumber++;
+
+            //mChoice1.setBackgroundColor(blue(255));
+            //mChoice2.setBackgroundColor(blue(255));
+            //mChoice3.setBackgroundColor(blue(255));
         }
 
     }
