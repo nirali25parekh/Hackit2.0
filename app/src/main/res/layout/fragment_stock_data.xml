@@ -15,6 +15,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
+
+
             <EditText
                 android:id="@+id/stockname"
                 android:layout_width="wrap_content"
@@ -30,9 +33,15 @@
                 android:text="@android:string/search_go" />
         </LinearLayout>
 
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/stockchart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
         <TextView
             android:id="@+id/stockdata"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="bhavi" />
     </LinearLayout>
 </FrameLayout>
