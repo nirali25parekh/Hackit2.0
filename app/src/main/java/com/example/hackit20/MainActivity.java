@@ -72,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
 
                     case 3:
                         setCustomView(3, 1, 2, 0);
-                        setTextAndImageWithAnimation("PROFILE", R.drawable.ic_person);
+                        setTextAndImageWithAnimation("Bhavi Data", R.drawable.ic_person);
 
-                        handleFragment(new com.example.hackit20.ProfileFragment());
+                        handleFragment(new StockDataFrag());
                         break;
                     case 0:
 
